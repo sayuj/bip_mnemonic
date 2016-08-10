@@ -1,6 +1,6 @@
 require 'pbkdf2'
 
-class Mnemonic
+class BipMnemonic
   VERSION = "0.0.1"
   def self.to_mnemonic(options)
     options ||= {}
