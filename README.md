@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sreekanthgs/mnemonic.svg?branch=master)](https://travis-ci.org/sreekanthgs/mnemonic)
+
 # README
 
 Mnemonic is a ruby gem to generate BIP-39 compliant Mnemonic Words from specific entropy or random entropy of `n` bits and also to generate the BIP-32 seed from the BIP-39 Mnemonic.
