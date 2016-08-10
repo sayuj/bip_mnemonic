@@ -19,7 +19,7 @@ BipMnemonic.to_entropy(mnemonic: 'scissors invite lock maple supreme raw rapid v
 ```
 Seed from Mnemonic Words
 ```
-words = Mnemonic.to_mnemonic(entropy: "c10ec20dc3cd9f652c7fac2f1230f7a3c828389a14392f05")
+words = BipMnemonic.to_mnemonic(entropy: "c10ec20dc3cd9f652c7fac2f1230f7a3c828389a14392f05")
 BipMnemonic.to_seed(mnemonic: words)
 ```
 
