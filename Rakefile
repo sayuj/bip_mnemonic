@@ -1,5 +1,5 @@
 require 'rspec/core/rake_task'
-require 'pbkdf2'
+require 'mnemonic'
 
 RSpec::Core::RakeTask.new(:spec)
 
