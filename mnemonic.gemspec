@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.version = Mnemonic::VERSION
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rdoc'
+  s.files = Dir['lib/**/*.rb']
 end
