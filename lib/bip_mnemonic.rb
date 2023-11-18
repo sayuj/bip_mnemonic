@@ -71,7 +71,12 @@ class BipMnemonic
     binary_with_checksum[0...-checksum_length]
   end
 
+  def list_languages
+    @list_languages ||= Dir['wordlist/*.txt'].map { |f| File.basename(f, '.txt') }
+  end
+
   def words
-    @words ||= File.readlines("words/#{@language}.txt").map(&:strip)
+    raise RuntimeError, 'Language not available' unless list_languages.include? @language
+    @words ||= File.readlines("wordlist/#{@language}.txt").map(&:strip)
   end
 end
